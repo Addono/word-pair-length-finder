@@ -40,4 +40,4 @@ To run the script:
 python search.py
 ```
 
-This project comes with a dataset containing all Dutch book titles according to [book.be](https://book.be) released in 2019. You can replace the `data.csv` file with any dataset you like. The script will use the first column as its input.
+This project comes with a dataset containing all Dutch book titles according to [book.be](https://book.be) released in 2019, scraped using [this](https://github.com/Addono/bookbe-spider) spider. You can replace the `data.csv` file with any dataset you like. The script will use the first column as its input.
