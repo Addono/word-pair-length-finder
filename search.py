@@ -41,7 +41,7 @@ if __name__ == "__main__":
             save_title(row[0])
 
     while True:
-        known_letter = input("Known letter, leave empty to skip: ").strip()
+        known_letter = input("Known letter, leave empty to skip: ").strip().lower()
 
         if known_letter:
             known_letter_index = int(input("Known letter index: ").strip()) - 1
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         print("----------------")
 
         for title in root.traverse():
-            if not known_letter or re.findall(r'\w', title)[known_letter_index] == known_letter:
+            if not known_letter or re.findall(r'\w', title)[known_letter_index].lower() == known_letter:
                 print(title)
 
         print("----------------")
